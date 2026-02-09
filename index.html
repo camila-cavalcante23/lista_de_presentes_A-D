@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="robots" content="noindex, nofollow">
+    
+    <title>Casamento de Noivo & Noiva</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="envelope-overlay">
+        <div class="envelope-container" onclick="abrirEnvelope()">
+            <div class="envelope">
+                <div class="envelope-back"></div>
+                <div class="card-preview">
+                    <h2>N & N</h2>
+                    <p>02.05.2026</p>
+                </div>
+                <div class="envelope-front"></div>
+                <div class="envelope-top"></div>
+                <div class="wax-seal">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <p class="click-instruction">Toque no coração para abrir</p>
+        </div>
+    </div>
+    <header>
+        <p class="verse">"Assim, já não são dois, mas uma só carne. Portanto, não separe o homem o que Deus uniu." <br> Mateus 19:6</p>
+        
+        <h1>
+           
+            Noivo & Noiva
+        </h1>
+
+        <div id="countdown" class="countdown-container">
+            <div class="time-box"><span id="days">00</span><p>Dias</p></div>
+            <div class="time-box"><span id="hours">00</span><p>Hs</p></div>
+            <div class="time-box"><span id="minutes">00</span><p>Min</p></div>
+            <div class="time-box"><span id="seconds">00</span><p>Seg</p></div>
+        </div>
+
+        <div class="date-location">
+            <span class="flower-icon"><i class="fa-solid fa-heart"></i></span> 
+            02 de Maio de 2026 
+            <span class="flower-icon"><i class="fa-solid fa-heart"></i></span>
+            <br>
+            Cidade - Estado
+        </div>
+
+        <div class="actions">
+            <a href="https://wa.me/numerodocasal?text=Olá! Gostaria de confirmar minha presença no casamento." class="btn btn-rsvp" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> Confirmar Presença
+            </a>
+            <a href="#presentes" class="btn btn-gifts">
+                <i class="fa-solid fa-gift"></i> Lista de Presentes
+            </a>
+        </div>
+    </header>
+
+    <div class="details reveal">
+        <h3><i class="fa-solid fa-church"></i> Cerimônia e Recepção</h3>
+        <p><strong>15:30h</strong> - Nome da Igreja ou Local</p>
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 15px 0;">
+        <p><strong>Logo após:</strong> Nome do Buffet ou Restaurante</p>
+        <p class="location-note"><i class="fa-solid fa-location-dot"></i> Ponto de referência</p>
+    </div>
+
+    <section id="presentes" class="gift-section reveal">
+        <h2 class="section-title">Lista de Presentes</h2>
+        <p class="gift-intro">Sua presença é nosso maior presente! Mas se desejar nos abençoar:</p>
+
+        <div class="gift-grid">
+            <div class="gift-card">
+                <div class="gift-icon"><i class="fa-solid fa-plane-departure"></i></div>
+                <h3 class="gift-title">Lua de Mel</h3>
+                <p class="gift-desc">Ajude-nos a realizar a viagem dos nossos sonhos com o valor que desejar.</p>
+                <button class="btn-pix" onclick="copiarPix('CHAVE_PIX_LUA_DE_MEL')">
+                    <i class="fa-brands fa-pix"></i> Presentear (Pix)
+                </button>
+            </div>
+
+            <div class="gift-card">
+                <div class="gift-icon"><i class="fa-solid fa-house-chimney"></i></div>
+                <h3 class="gift-title">Nossa Casa</h3>
+                <p class="gift-desc">Contribua para deixarmos nosso novo lar do jeitinho que sonhamos.</p>
+                <button class="btn-pix" onclick="copiarPix('CHAVE_PIX_CASA')">
+                    <i class="fa-brands fa-pix"></i> Presentear (Pix)
+                </button>
+            </div>
+
+            <div class="gift-card">
+                <div class="gift-icon"><i class="fa-solid fa-utensils"></i></div>
+                <h3 class="gift-title">Jantar Romântico</h3>
+                <p class="gift-desc">Um vale jantar para celebrarmos nossa união.</p>
+                <button class="btn-pix" onclick="copiarPix('CHAVE_PIX_JANTAR')">
+                    <i class="fa-brands fa-pix"></i> Presentear (Pix)
+                </button>
+            </div>
+
+            <div class="gift-card">
+                <div class="gift-icon"><i class="fa-solid fa-spa"></i></div>
+                <h3 class="gift-title">Dia de Beleza</h3>
+                <p class="gift-desc">Para ficarmos lindos no grande dia.</p>
+                <button class="btn-pix" onclick="copiarPix('CHAVE_PIX_BELEZA')">
+                    <i class="fa-brands fa-pix"></i> Presentear (Pix)
+                </button>
+            </div>
+            
+            <div class="gift-card">
+                <div class="gift-icon"><i class="fa-solid fa-couch"></i></div>
+                <h3 class="gift-title">Decoração</h3>
+                <p class="gift-desc">Ajude a decorar nossa casa nova.</p>
+                <button class="btn-pix" onclick="copiarPix('CHAVE_PIX_DECORACAO')">
+                    <i class="fa-brands fa-pix"></i> Presentear (Pix)
+                </button>
+            </div>
+
+             <div class="gift-card">
+                <div class="gift-icon"><i class="fa-solid fa-gift"></i></div>
+                <h3 class="gift-title">Livre</h3>
+                <p class="gift-desc">Deseja nos presentear com outro valor?</p>
+                <button class="btn-pix" onclick="copiarPix('CHAVE_PIX_GERAL')">
+                    <i class="fa-brands fa-pix"></i> Presentear (Pix)
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="location-section reveal">
+        <h2 class="section-title">Como Chegar</h2>
+        
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.353386689843!2d-38.5283457!3d-3.7275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM!5e0!3m2!1spt-BR!2sbr!4v1600000000000!5m2!1spt-BR!2sbr" 
+                width="100%" 
+                height="350" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div class="gps-buttons">
+            <a href="https://goo.gl/maps/generic" target="_blank" class="btn btn-gps">
+                <i class="fa-solid fa-map-location-dot"></i> Abrir no Google Maps
+            </a>
+            <a href="https://waze.com/ul?q=Endereco%20do%20Casamento" target="_blank" class="btn btn-gps waze">
+                <i class="fa-brands fa-waze"></i> Abrir no Waze
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Feito com <i class="fa-solid fa-heart" style="color: white;"></i> para Noivo & Noiva</p>
+        <p>02 . 05 . 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
